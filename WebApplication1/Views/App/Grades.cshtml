@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Grades";
+}
+
+@model GradesModel
+
+<div class="container">
+    <h3>Grades</h3>
+
+    <form method="post">
+        <label>Assignments: </label>
+        <input id="assign" asp-for="assign"/><br />
+        <label>Group Project: </label>
+        <input id="gp" asp-for="gp"/><br />
+        <label>Quizzes: </label>
+        <input id="quiz" asp-for="quiz"/><br />
+        <label>Exams: </label>
+        <input id="exam" asp-for="exam"/><br />
+        <label>INTEX: </label>
+        <input id="intex" asp-for="intex"/><br />
+        <input id="grade" type="submit" value="Submit grades" />
+
+        <div asp-validation-summary="All"></div>
+    </form>
+
+</div>
+
+
